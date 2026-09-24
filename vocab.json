@@ -1,5 +1,5 @@
 {
-  "vocabulary_version": "2026-07-23",
+  "vocabulary_version": "2026-09-24",
   "domains": [
     {"code": "quant", "label": "Quantitative conflict data", "steward": "Kevin Fahey"},
     {"code": "geo", "label": "Geospatial & Earth observation", "steward": "Doreen Boyd"},
@@ -48,18 +48,28 @@
     {"slug": "participatory", "facet": "methods", "label": "Participatory methods", "status": "current", "since": "2026-07-23"},
     {"slug": "statistical-modelling", "facet": "methods", "label": "Statistical modelling", "status": "current", "since": "2026-07-23"},
     {"slug": "armed-conflict", "facet": "contexts", "label": "Armed conflict", "status": "current", "since": "2026-07-23"},
-    {"slug": "occupation", "facet": "contexts", "label": "Occupation", "status": "current", "since": "2026-07-23"},
+    {"slug": "occupation", "facet": "contexts", "label": "Occupation", "status": "current", "since": "2026-07-23", "broader": "armed-conflict"},
     {"slug": "displacement-camps", "facet": "contexts", "label": "Displacement camps", "status": "current", "since": "2026-07-23"},
     {"slug": "extractive-industries", "facet": "contexts", "label": "Extractive industries", "status": "current", "since": "2026-07-23"},
     {"slug": "agriculture", "facet": "contexts", "label": "Agriculture", "status": "current", "since": "2026-07-23"},
     {"slug": "construction", "facet": "contexts", "label": "Construction", "status": "current", "since": "2026-07-23"},
-    {"slug": "maritime", "facet": "contexts", "label": "Maritime", "status": "current", "since": "2026-07-23"}
+    {"slug": "maritime", "facet": "contexts", "label": "Maritime", "status": "current", "since": "2026-07-23"},
+    {"slug": "interstate-war", "facet": "contexts", "label": "Interstate war", "status": "current", "since": "2026-09-24", "broader": "armed-conflict"},
+    {"slug": "intrastate-war", "facet": "contexts", "label": "Intrastate war", "status": "current", "since": "2026-09-24", "broader": "armed-conflict"},
+    {"slug": "colonial-war", "facet": "contexts", "label": "Colonial war", "status": "current", "since": "2026-09-24", "broader": "armed-conflict"},
+    {"slug": "terrorist-campaign", "facet": "contexts", "label": "Terrorist campaign", "status": "current", "since": "2026-09-24", "broader": "armed-conflict"}
   ],
-  "changes": [],
+  "changes": [
+    {"date": "2026-09-24", "by": "k1078591", "note": "colleague-suggested subtypes of armed-conflict", "kind": "add", "to": ["interstate-war"], "facet": "contexts", "label": "Interstate war", "broader": "armed-conflict"},
+    {"date": "2026-09-24", "by": "k1078591", "note": "colleague-suggested subtypes of armed-conflict", "kind": "add", "to": ["intrastate-war"], "facet": "contexts", "label": "Intrastate war", "broader": "armed-conflict"},
+    {"date": "2026-09-24", "by": "k1078591", "note": "colleague-suggested subtypes of armed-conflict", "kind": "add", "to": ["colonial-war"], "facet": "contexts", "label": "Colonial war", "broader": "armed-conflict"},
+    {"date": "2026-09-24", "by": "k1078591", "note": "colleague-suggested subtypes of armed-conflict", "kind": "add", "to": ["terrorist-campaign"], "facet": "contexts", "label": "Terrorist campaign", "broader": "armed-conflict"},
+    {"date": "2026-09-24", "by": "k1078591", "note": "colleague-suggested subtypes of armed-conflict", "kind": "move", "from": ["occupation"], "broader": "armed-conflict"}
+  ],
   "facets": {
     "practices": ["forced-labour", "sexual-slavery", "forced-marriage", "child-soldiering", "debt-bondage", "domestic-servitude", "forced-criminality", "human-trafficking", "forced-displacement"],
     "themes": ["legal-frameworks", "prosecution", "prevalence", "prevention", "survivor-experience", "reparations", "conflict-financing", "supply-chains", "humanitarian-response", "post-conflict-transition"],
     "methods": ["remote-sensing", "survey", "interview", "archival", "legal-analysis", "osint", "participatory", "statistical-modelling"],
-    "contexts": ["armed-conflict", "occupation", "displacement-camps", "extractive-industries", "agriculture", "construction", "maritime"]
+    "contexts": ["armed-conflict", "occupation", "displacement-camps", "extractive-industries", "agriculture", "construction", "maritime", "interstate-war", "intrastate-war", "colonial-war", "terrorist-campaign"]
   }
 }
