@@ -1,5 +1,5 @@
 {
-  "vocabulary_version": "2026-09-24",
+  "vocabulary_version": "2026-10-15",
   "domains": [
     {"code": "quant", "label": "Quantitative conflict data", "steward": "Kevin Fahey"},
     {"code": "geo", "label": "Geospatial & Earth observation", "steward": "Doreen Boyd"},
@@ -22,12 +22,12 @@
   "terms": [
     {"slug": "forced-labour", "facet": "practices", "label": "Forced labour", "status": "current", "since": "2026-07-23", "scope": "Work or service exacted from a person under the menace of a penalty and not offered voluntarily (ILO Convention 29, art. 2). Excludes compulsory military service, ordinary civic obligations and supervised prison labour."},
     {"slug": "sexual-slavery", "facet": "practices", "label": "Sexual slavery", "status": "current", "since": "2026-07-23"},
-    {"slug": "forced-marriage", "facet": "practices", "label": "Forced marriage", "status": "current", "since": "2026-07-23"},
+    {"slug": "forced-marriage", "facet": "practices", "label": "Forced marriage", "status": "current", "since": "2026-07-23", "scope": "Marriage or marriage-like union entered into without the free and full consent of one or both parties, including servile marriage, where a person is given, transferred or inherited as a spouse for payment or other consideration (Supplementary Convention 1956, art. 1(c)), and child marriage where the child could not consent. Not for arranged marriages that both parties freely accepted."},
     {"slug": "child-soldiering", "facet": "practices", "label": "Child soldiering", "status": "current", "since": "2026-07-23", "scope": "Recruitment or use of a person under 18 by an armed force or armed group in any role, including fighters, cooks, porters, messengers, spies and those used for sexual purposes (Paris Principles 2007, §2.1). Not for adults made to fight; use forced-labour with an armed-conflict context.", "aliases": ["child-soldiers"]},
     {"slug": "debt-bondage", "facet": "practices", "label": "Debt bondage", "status": "current", "since": "2026-07-23"},
     {"slug": "domestic-servitude", "facet": "practices", "label": "Domestic servitude", "status": "current", "since": "2026-07-23"},
     {"slug": "forced-criminality", "facet": "practices", "label": "Forced criminality", "status": "current", "since": "2026-07-23"},
-    {"slug": "human-trafficking", "facet": "practices", "label": "Human trafficking", "status": "current", "since": "2026-07-23"},
+    {"slug": "human-trafficking", "facet": "practices", "label": "Human trafficking", "status": "current", "since": "2026-07-23", "scope": "Recruitment, transport, transfer, harbouring or receipt of a person by threat, force, coercion, abduction, fraud, deception or abuse of power or of a position of vulnerability, for the purpose of exploitation (Palermo Protocol 2000, art. 3). The movement or handling is the practice; the exploitation it led to is recorded under its own term as well. Provisional wording: whether the transfer of a child for exploitation (Supplementary Convention 1956, art. 1(d)) falls inside this term awaits a legal specialist's view."},
     {"slug": "forced-displacement", "facet": "practices", "label": "Forced displacement", "status": "current", "since": "2026-07-23"},
     {"slug": "legal-frameworks", "facet": "themes", "label": "Legal frameworks", "status": "current", "since": "2026-07-23"},
     {"slug": "prosecution", "facet": "themes", "label": "Prosecution", "status": "current", "since": "2026-07-23"},
@@ -57,19 +57,23 @@
     {"slug": "interstate-war", "facet": "contexts", "label": "Interstate war", "status": "current", "since": "2026-09-24", "broader": "armed-conflict"},
     {"slug": "intrastate-war", "facet": "contexts", "label": "Intrastate war", "status": "current", "since": "2026-09-24", "broader": "armed-conflict"},
     {"slug": "colonial-war", "facet": "contexts", "label": "Colonial war", "status": "current", "since": "2026-09-24", "broader": "armed-conflict"},
-    {"slug": "terrorist-campaign", "facet": "contexts", "label": "Terrorist campaign", "status": "current", "since": "2026-09-24", "broader": "armed-conflict"}
+    {"slug": "terrorist-campaign", "facet": "contexts", "label": "Terrorist campaign", "status": "current", "since": "2026-09-24", "broader": "armed-conflict"},
+    {"slug": "mass-atrocity", "facet": "contexts", "label": "Mass atrocity", "status": "current", "since": "2026-10-15", "scope": "Slavery practices committed in the course of genocide, crimes against humanity, ethnic cleansing or another widespread or systematic attack on a civilian population, whether or not an armed conflict is under way. Use armed-conflict (or one of its narrower terms) as well when there is one."},
+    {"slug": "slave-trade", "facet": "practices", "label": "Slave trade", "status": "current", "since": "2026-10-15", "scope": "Capture, acquisition, transport, sale or exchange of persons with intent to enslave them, and any trade or transport in enslaved persons (Slavery Convention 1926, art. 1(2)). For the conditions of the enslavement itself use the practice it amounted to, such as forced-labour or domestic-servitude.", "aliases": ["slave-trading", "slaving"]}
   ],
   "changes": [
     {"date": "2026-09-24", "by": "k1078591", "note": "colleague-suggested subtypes of armed-conflict", "kind": "add", "to": ["interstate-war"], "facet": "contexts", "label": "Interstate war", "broader": "armed-conflict"},
     {"date": "2026-09-24", "by": "k1078591", "note": "colleague-suggested subtypes of armed-conflict", "kind": "add", "to": ["intrastate-war"], "facet": "contexts", "label": "Intrastate war", "broader": "armed-conflict"},
     {"date": "2026-09-24", "by": "k1078591", "note": "colleague-suggested subtypes of armed-conflict", "kind": "add", "to": ["colonial-war"], "facet": "contexts", "label": "Colonial war", "broader": "armed-conflict"},
     {"date": "2026-09-24", "by": "k1078591", "note": "colleague-suggested subtypes of armed-conflict", "kind": "add", "to": ["terrorist-campaign"], "facet": "contexts", "label": "Terrorist campaign", "broader": "armed-conflict"},
-    {"date": "2026-09-24", "by": "k1078591", "note": "colleague-suggested subtypes of armed-conflict", "kind": "move", "from": ["occupation"], "broader": "armed-conflict"}
+    {"date": "2026-09-24", "by": "k1078591", "note": "colleague-suggested subtypes of armed-conflict", "kind": "move", "from": ["occupation"], "broader": "armed-conflict"},
+    {"date": "2026-10-15", "by": "k1078591", "note": "9 Oct 2026 classification exercise", "kind": "add", "to": ["mass-atrocity"], "facet": "contexts", "label": "Mass atrocity"},
+    {"date": "2026-10-15", "by": "k1078591", "note": "9 Oct 2026 classification exercise; pre-twentieth-century material and the SlaveVoyages data", "kind": "add", "to": ["slave-trade"], "facet": "practices", "label": "Slave trade"}
   ],
   "facets": {
-    "practices": ["forced-labour", "sexual-slavery", "forced-marriage", "child-soldiering", "debt-bondage", "domestic-servitude", "forced-criminality", "human-trafficking", "forced-displacement"],
+    "practices": ["forced-labour", "sexual-slavery", "forced-marriage", "child-soldiering", "debt-bondage", "domestic-servitude", "forced-criminality", "human-trafficking", "forced-displacement", "slave-trade"],
     "themes": ["legal-frameworks", "prosecution", "prevalence", "prevention", "survivor-experience", "reparations", "conflict-financing", "supply-chains", "humanitarian-response", "post-conflict-transition"],
     "methods": ["remote-sensing", "survey", "interview", "archival", "legal-analysis", "osint", "participatory", "statistical-modelling"],
-    "contexts": ["armed-conflict", "occupation", "displacement-camps", "extractive-industries", "agriculture", "construction", "maritime", "interstate-war", "intrastate-war", "colonial-war", "terrorist-campaign"]
+    "contexts": ["armed-conflict", "occupation", "displacement-camps", "extractive-industries", "agriculture", "construction", "maritime", "interstate-war", "intrastate-war", "colonial-war", "terrorist-campaign", "mass-atrocity"]
   }
 }
