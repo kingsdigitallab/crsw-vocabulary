@@ -1,5 +1,5 @@
 {
-  "vocabulary_version": "2026-10-15",
+  "vocabulary_version": "2026-10-23",
   "domains": [
     {"code": "quant", "label": "Quantitative conflict data", "steward": "Kevin Fahey"},
     {"code": "geo", "label": "Geospatial & Earth observation", "steward": "Doreen Boyd"},
